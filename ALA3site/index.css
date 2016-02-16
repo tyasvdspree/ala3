@@ -1,0 +1,300 @@
+*{
+	font-family: 'Roboto', sans-serif;
+}
+
+html, body{
+	max-width: 100%;
+	overflow-x: hidden;
+}
+body{
+	background: black url(images/achtergrond90.jpg);
+	background-size: fill;
+	 background-repeat: no-repeat;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: white;
+}
+
+a:active {
+    color: white
+}
+
+/*HEADER*/
+.header-nav li {
+  padding: 0 20px;
+  text-align: center; }
+.header-nav .is-active a {
+  position: relative; }
+@media only screen and (min-width: 64em) {
+.header-nav {
+    display: table;
+    width: 100%;
+    padding: 20px 0;
+    transition: padding 200ms; }
+    .header-nav ul {
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle; }
+    .header-nav li {
+      display: inline-block;
+      margin: 0; }
+    .header-nav .is-active a:after {
+      content: '';
+      width: calc(100% - 2px);
+      height: 2px;
+      position: absolute;
+      bottom: -8px;
+      left: 1px;
+      background-color: #0ba8e3;
+      transition: bottom 200ms; } }
+
+.header-actions {
+  display: none;
+  background-color: transparent;
+  transition: background-color 250ms; }
+.header-actions a {
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.15385;
+    text-decoration: none; }
+    .header-actions a:hover, .header-actions a:focus {
+      color: #0ba8e3;
+      text-decoration: none; }
+    .header-actions a:active {
+      color: #0ba8e3; }
+ @media (max-width: 64em) {
+ }
+
+ @media only screen and (min-width: 64em) {
+    .header-actions {
+      display: block; } }
+
+a {
+  color: #0ba8e3;
+  text-decoration: none;
+  transition-duration: 250ms;
+  transition-property: color, background-color, border-color; }
+  a:focus, a:hover {
+    color: #0ba8e3;
+    text-decoration: underline; }
+  a:active {
+    color: #0ba8e3; }
+/*EINDE HEADER*/
+
+/*FORMS*/
+.forms {
+  padding-top: 20px;
+  position: relative;
+  margin-bottom: 10px; }
+  .forms label {
+    color: #999;
+	font-size: 13px;
+    line-height: 1.42857;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    transition: 250ms ease all;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-weight: 500; }
+  .forms .text {
+    line-height: 1.25;
+    padding: 10px 10px 10px 0;
+    display: block;
+    width: 300px;
+    border: none;
+    border-bottom: 1px solid #999;
+    background-color: transparent;
+    transition: 250ms ease border-color;
+    box-sizing: border-box;
+    font-weight: 500; }
+    .forms .text:focus {
+      outline: none;
+      border-color: #0ba8e3; }
+	.forms .text:hover {
+      outline: none;
+      border-color: #0ba8e3; }
+	
+	
+	input:focus ~ label, input:valid ~label {
+	  font-size:10px;
+	  font-weight:bold;
+	  left:-13px;
+	  top:-1px;
+	}
+	
+	input:hover ~ label, input:valid ~label {
+	  font-size:10px;
+	  font-weight:bold;
+	  left:-13px;
+	  top:-1px;
+	}
+	
+	input:focus ~ label, input:invalid ~label:after{
+	  font-size:11px;
+	  font-weight:bold;
+	  left:-13px;
+	  top:-1px;
+	}
+	
+	input:hover ~ label, input:invalid ~label:after{
+	  font-size:11px;
+	  font-weight:bold;
+	  left:-13px;
+	  top:-1px;
+	}
+	
+	input:valid ~label {
+		color:#0ba8e3;
+	}
+	
+	input:focus:invalid ~label{
+	  color:red;
+	}
+	
+	input:hover:invalid ~label{
+	  color:red;
+	}
+
+	input::-webkit-outer-spin-button,
+	input::-webkit-inner-spin-button {
+		-webkit-appearance: none;
+	}
+	
+	::-webkit-input-placeholder {
+	  color: #000;
+	  opacity: 0;
+	  -webkit-transition: opacity 0.35s ease-in-out;
+	  transition: opacity 0.35s ease-in-out;
+	}
+	
+	:hover::-webkit-input-placeholder {
+	  opacity: 0.35;
+	  -webkit-transition: opacity 0.35s ease-in-out;
+	  transition: opacity 0.35s ease-in-out;
+	  color:white;
+	}
+	
+	:focus::-webkit-input-placeholder {
+	  opacity: 0.35;
+	  -webkit-transition: opacity 0.35s ease-in-out;
+	  transition: opacity 0.35s ease-in-out;
+	  color:white;
+	}
+	
+	.txtarea{
+		width: 300px;
+	}
+	/*EINDE FORMS*/
+	
+	.bovenkant{
+		background-color: #262626;
+		color: white;
+		border: none;
+	}
+	
+	.blok{
+		background-color: #262626;
+		color:white;
+		font-size:150%;
+		border: 0;
+	}
+	
+	.inloggevens{
+		background-color: none;
+		position: absolute;
+		color:white;
+		font-size:150%;
+		border: 0;
+	}
+	
+	.checkbox{
+		position: absolute;
+		top:6%;
+		left:60%;
+	}
+	
+	.iets{
+		background-color: none;
+		padding-top: 2%;
+	}
+	
+	.toerismeblok{
+		background-color:#262626;
+		color: white;
+		font-size:150%;
+		border: 0;
+	}
+
+	.btn-default {
+		background-color:transparent;
+		-moz-border-radius:9px;
+		-webkit-border-radius:9px;
+		border-radius:9px;
+		display:inline-block;
+		cursor:pointer;
+		color:#ffffff;
+		font-family:Verdana;
+		font-size:17px;
+		font-weight:bold;
+		padding:13px 10px;
+		text-decoration:none;
+	}
+	.btn-default:hover {
+		background-color:transparent;
+		border-color: #0ba8e3;
+		color:#999;
+	}
+	.btn-default:active {
+		position:relative;
+		top:1px;
+	}
+
+	.redenblok{
+		background-color:#262626;
+		color: white;
+		font-size:150%;
+		border: 0;
+	}
+
+	.ugh{
+		background-color: none;
+		color: none;
+		border: 0;
+		padding-top: 12%;
+		
+	}
+
+	.igh{
+		background-color: none;
+		color: none;
+		border: 0;
+		
+	}
+	.login{
+		position: absolute;
+		top: 3%;
+		right: 7%;
+	}
+	
+	.login:active {
+		position: absolute;
+		top: 3%;
+		right: 7%;
+	}
+	
+
+
+
+	
