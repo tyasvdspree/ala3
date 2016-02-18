@@ -54,7 +54,7 @@
 				<div class="col-md-3">
 					<div class="well blok">
 						
-							<form method="post" action="index.php" id="LoginForm">
+							<form id="LoginForm">
 								
 								<div class="form-group">
 								
@@ -69,7 +69,7 @@
 									</div>
 								
 							  </div>
-							  <button type="submit" class="btn btn-default" onclick="login()" >Login</button>
+							  <button class="btn btn-default" onclick="login()" >Login</button>
 							</form>
 						
 						</div>
@@ -81,7 +81,7 @@
 			
 				<div class="navbar navbar-inverse navbar-fixed-bottom">
 					<div class="container">
-						<p class="navbar-text pull-left copyright">&copy;/...\.inc <script>new Date().getFullYear()&&document.write(new Date().getFullYear());</script>
+						<p class="navbar-text pull-left copyright">&copy;Labtreeo.inc <script>new Date().getFullYear()&&document.write(new Date().getFullYear());</script>
 					</div>
 				</div>
 			

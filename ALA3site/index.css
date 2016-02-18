@@ -211,7 +211,7 @@ a {
 		border: 0;
 	}
 	
-	.inloggevens{
+	#inloggevens{
 		background-color: none;
 		position: absolute;
 		color:white;
@@ -243,7 +243,6 @@ a {
 		-webkit-border-radius:9px;
 		border-radius:9px;
 		display:inline-block;
-		cursor:pointer;
 		color:#ffffff;
 		font-family:Verdana;
 		font-size:17px;
@@ -282,19 +281,19 @@ a {
 		border: 0;
 		
 	}
-	.login{
-		position: absolute;
-		top: 3%;
-		right: 7%;
-	}
-	
-	.login:active {
-		position: absolute;
-		top: 3%;
-		right: 7%;
-	}
-	
 
+	.dropdown{
+		position: absolute;
+		top: 3%;
+		right: 12%;
+	}
+	 .dropdown-menu{
+		 background-color:#262626;
+		 color:white;
+		 font-size: 120%;
+		 padding-left: 14%;
+		 padding-right:14%;
+	 }	
 
 
 	
