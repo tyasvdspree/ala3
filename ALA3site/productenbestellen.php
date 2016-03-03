@@ -23,33 +23,15 @@
 		?>
 		
 		<div class="row">
-			<div class="col-xs-12 iets">
+			<div class="col-xs-1">
 			</div>
-		</div>
-			<div class="row">
-				<div class="col-xs-1">
-				</div>
-				<div class="col-md-5">
-					<div class="well blok">
-					<?php
-						if ($Taalnu == "EN"){
-					?>
-						
-						<form method="post" action="prodcuten.php?taal=EN&high=3">
-						
-					<?php
-						}
-						
-						else {
-					?>
-						<form method="post" action="prodcuten.php?taal=NL&high=3">
-					<?php	
-						}	
-					?>
-						<div class="form-group">
+				<div class="col-xs-3 blok edgeleft">
+					
+						<form method="post" action="prodcuten.php?high=3">
+							  <div class="form-group">
 								
 								<div class="forms">
-									<input type="name" class="text" name="txtVoornaam" placeholder=" John" required>
+									<input type="name" class="text" name="txtVoornaam" placeholder=" John" maxlength="20" required>
 							<?php
 								if ($Taalnu == "EN"){						
 							?>
@@ -61,11 +43,11 @@
 								<label>Voornaam</label>
 							<?php
 								}
-							?>
-								</div>
-								
-								<div class="forms">
-									<input type="name" class="text" name="txtAchternaam" placeholder=" Appleseed" required>
+							?>				
+							</div>
+
+							<div class="forms">
+								<input type="name" class="text" name="txtAchternaam" placeholder=" Appleseed" maxlength="20"required>
 							<?php
 								if ($Taalnu == "EN"){
 							?>
@@ -78,42 +60,10 @@
 							<?php
 								}
 							?>
-								</div>
-								
+							</div>
+															
 								<div class="forms">
-									<input type="name" class="text" name="txtAdres" placeholder=" 1234AB Applestraat 1" required>
-							<?php
-								if ($Taalnu == "EN"){
-							?>
-								<label>Zip code, street and Address</label>
-							<?php
-							}
-								else {
-							?>
-								<label>Postcode, straat en huisnummer</label>
-							<?php
-								}
-							?>
-								</div>
-								
-								<div class="forms">
-									<input type="name" class="text" name="txtPlaats" placeholder="Amsterdam" required>
-								<?php
-								if ($Taalnu == "EN"){
-							?>
-								<label>residence</label>
-							<?php
-								}
-								else {
-							?>
-								<label>Woonplaats</label>
-							<?php						
-							}
-							?>
-								</div>
-								
-								<div class="forms">
-									<input type="name" class="text" name="txtTelefoon" placeholder="0612345678" required>
+								<input type="number" class="text" name="txtTelefoon" placeholder=" 0612345678"  min="0" max="9999999999" required>
 							<?php
 								if ($Taalnu == "EN"){
 							?>
@@ -126,44 +76,122 @@
 							<?php
 								}
 							?>
+										
 								</div>
 								
 								<div class="forms">
-									<input type="email" class="text" name="txtEmail" placeholder="johnappleseed@gmail.com" required>
+									<input type="email" class="text" name="txtEmail" placeholder=" johnappleseed@gmail.com" required>
 										<label>Email</label>	
-								</div><br>
-								
+								</div>
+
+							<?php
+								if ($Taalnu == "EN"){
+							?>
+								<button type="submit" class="btn btn-default">Order</button>
+							<?php	
+								}
+								else {
+							?>
+								<button type="submit" class="btn btn-default">Bestellen</button>
+							<?php
+								}
+							?>
+						</div>
+					</div>
+				
+					<div class="col-xs-5 blok edgeright-kopie">
+						
+							<div class="forms">
+								<input type="name" class="text" name="txtPostcode" placeholder=" 1234AB" maxlength="6"required>
+							<?php
+								if ($Taalnu == "EN"){
+							?>
+								<label>Zip code</label>
+							<?php
+							}
+								else {
+							?>
+								<label>Postcode</label>
+							<?php
+								}
+							?>
+							</div>
+							
+							<div class="forms">
+								<input type="name" class="text" name="txtStraat" placeholder=" Applestraat" required>
+							<?php
+								if ($Taalnu == "EN"){
+							?>
+								<label>Street</label>
+							<?php
+							}
+								else {
+							?>
+								<label>Straat</label>
+							<?php
+								}
+							?>
+							</div>
+							
+							<div class="forms">
+								<input type="number" class="text" name="txtHuisnummer" placeholder="1" maxlength="3"  min="0" max="999" required>
+							<?php
+								if ($Taalnu == "EN"){
+							?>
+								<label>Homenumber</label>
+							<?php
+							}
+								else {
+							?>
+								<label>Huisnummer</label>
+							<?php
+								}
+							?>
+							</div>
+							
+							<div class="forms">
+								<input type="name" class="text" name="txtPlaats" placeholder=" Amsterdam" required>
+							<?php
+								if ($Taalnu == "EN"){
+							?>
+								<label>residence</label>
+							<?php
+								}
+								else {
+							?>
+								<label>Woonplaats</label>
+							<?php									}
+							?>
+							</div>
 									<div class="checkbox">
 										<label>
 											<?php
 												if ($Taalnu == "EN"){
 											?>
 												<input type="radio" name="register" value="Bevolkins register" required> Population register</input><br>
-												<input type="radio" name="register" value="Geen Bevolkins register" required>No population register</input><br>
+												<input type="radio" name="register" value="Geen Bevolkins register" required> No population register</input><br>
 												<hr>
 												<input type="radio" name="paspoort" value="Paspoort aanvragen" required> Request passport</input><br>
-												<input type="radio" name="paspoort" value="Paspoort verlengen" required> Extend passport</input>
-												<input type="radio" name="paspoort" value="Geen Paspoort aanvragen/verlengen" required>Don't Request passport/extend</input><br>
+												<input type="radio" name="paspoort" value="Paspoort verlengen" required> Extend passport</input><br>
+												<input type="radio" name="paspoort" value="Geen Paspoort aanvragen/verlengen" required> Don't Request passport/extension</input><br>
 											<?php
 												}
 												else {
 											?>
 												<input type="radio" name="register" value="Bevolkins register" required> Bevolkins register</input><br>
-												<input type="radio" name="register" value="Geen Bevolkins register" required>Geen bevolkins register</input><br>
+												<input type="radio" name="register" value="Geen Bevolkins register" required> Geen bevolkins register</input><br>
 												<hr>
-												<input type="radio" name="paspoort" value="Paspoort aanvragen" required>Paspoort aanvragen</input><br>
+												<input type="radio" name="paspoort" value="Paspoort aanvragen" required> Paspoort aanvragen</input><br>
 												<input type="radio" name="paspoort" value="Paspoort verlengen" required> Paspoort verlengen</input><br>
-												<input type="radio" name="paspoort" value="Geen Paspoort aanvragen/verlengen" required>Geen Paspoort aanvragen/verlengen</input><br>
+												<input type="radio" name="paspoort" value="Geen Paspoort aanvragen/verlengen" required> Geen Paspoort aanvragen/verlengen</input><br>
 											<?php
 												}
 											?>
 										</label><br>
 									</div>
-									
-							<button type="submit" class="btn btn-default">Bestellen</button>
-							
+
 						</form>						
-					</div>
+					
 				</div>
 			</div>
 		</body>

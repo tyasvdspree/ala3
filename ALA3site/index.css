@@ -220,7 +220,7 @@ a {
 	
 	.checkbox{
 		position: absolute;
-		top:6%;
+		top:4%;
 		left:45%;
 	}
 	
@@ -292,4 +292,21 @@ a {
 		 font-size: 120%;
 		 padding-left: 14%;
 		 padding-right:14%;
-	}		
+	}
+	
+	.edgeright{
+		border-top-right-radius:0.4em;
+		border-bottom-right-radius:0.4em;
+		padding-bottom:11.6%;
+	}
+	
+	.edgeright-kopie{
+		border-top-right-radius:0.4em;
+		border-bottom-right-radius:0.4em;
+		padding-bottom:3.42%;
+	}
+	
+	.edgeleft{
+		border-top-left-radius:0.4em;
+		border-bottom-left-radius:0.4em;
+	}

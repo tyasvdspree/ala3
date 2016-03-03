@@ -39,18 +39,21 @@
 	
 	if(isset($txtVoornaam)) {
 		date_default_timezone_set("Europe/Amsterdam");
-		$vandaag = date("d-m-Y H:i:s");
+		$vandaag = date("d-m-Y H:i");
 		$voornaam = $txtVoornaam;
 		$achternaam = $txtAchternaam;
-		$adres = $txtAdres;
+		$postcode = $txtPostcode;
+		$straat = $txtStraat;
+		$huisnummer = $txtHuisnummer;
 		$woonplaats = $txtPlaats;
 		$telefoon = $txtTelefoon;
 		$email = $txtEmail;
 		
 
 		echo "Hieronder staan uw gegevens.
+			<br>Datum: $vandaag
 			<br>Naam: $voornaam $achternaam
-			<br>Adres: $adres
+			<br>Adres: $postcode $straat $huisnummer
 			<br>woonplaats: $woonplaats
 			<br>Telefoon nummer: $telefoon
 			<br>Email: $email";
@@ -89,8 +92,7 @@
 		$reg = $register;
 		$pas = $paspoort;
 
-		echo"$vandaag
-			<br>Bestellingen:<br>
+		echo"Bestellingen:<br>
 			$reg<br>
 			$pas<br><br>
 			Bedankt voor uw bestelling het wordt binnen 3 tot 5 werkdagen bezorgd.";

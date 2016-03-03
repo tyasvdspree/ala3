@@ -36,7 +36,7 @@
 					<?php
 					if ($Taalnu == "EN"){
 				?>
-					  <p>Welcome to the website of the town.<br>  On this website you can find information about the tourism of the town and make a request.<br>
+					  <p>Welcome to the website of the town.<br> On this website you can find information about the tourism of the town and make a request.<br> 
 					  You can ask questions and download a form by clicking on the buttons down below</p>
 				<?php
 					}
