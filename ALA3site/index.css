@@ -7,7 +7,7 @@ html, body{
 	overflow-x: hidden;
 }
 body{
-	background: black url(images/achtergrond90.jpg);
+	background: black url(images/achtergrondtest.png);
 	background-size: fill;
 	 background-repeat: no-repeat;
 }
@@ -116,7 +116,6 @@ a {
     border: none;
     border-bottom: 1px solid #999;
     background-color: transparent;
-    transition: 250ms ease border-color;
     box-sizing: border-box;
     font-weight: 500; }
     .forms .text:focus {
@@ -222,7 +221,7 @@ a {
 	.checkbox{
 		position: absolute;
 		top:6%;
-		left:60%;
+		left:45%;
 	}
 	
 	.iets{
@@ -293,7 +292,4 @@ a {
 		 font-size: 120%;
 		 padding-left: 14%;
 		 padding-right:14%;
-	 }	
-
-
-	
+	}		

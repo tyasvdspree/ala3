@@ -1,0 +1,125 @@
+				<?php
+				include"vertalentest.php";
+				?>
+							
+				<script>
+					
+					function login(){
+						sessionStorage.txtVoornaam = document.getElementById("voornaam").value;
+						sessionStorage.txtAchternaam = document.getElementById("achternaam").value;
+						window.location.reload();
+					}
+									
+					$(document).ready(function(){
+						if(sessionStorage.txtVoornaam != undefined && sessionStorage.txtAchternaam != undefined){
+						document.getElementById("inloggevens").innerHTML = "&nbsp Welkom " + sessionStorage.txtVoornaam;
+						document.getElementById("inloggevens").innerHTML = document.getElementById("inloggevens").innerHTML + " " + sessionStorage.txtAchternaam;
+						
+						}
+						
+						else{
+							<?php
+								if ($Taalnu == "EN"){
+							?>
+								document.getElementById("inloggevens").innerHTML = "&nbsp Welcome guest";
+							<?php
+								}
+								else {
+							?>
+								document.getElementById("inloggevens").innerHTML = "&nbsp Welkom gast";
+							<?php
+								}
+							?>
+							
+							
+						}
+					});
+					
+				
+				</script>
+				
+				
+				<div class="well bovenkant">					
+					<h1><a href="index.php" style="text-decoration:none">Brunsville</a></h1>
+				</div>
+				<?php
+				include"changeLang.php";
+				?>
+				
+				 <div class="dropdown">
+					<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Login
+					<span class="caret"></span></button>
+					<ul class="dropdown-menu">
+					  <li>
+					  
+								<div id="LoginForm">
+									
+									<div class="form-group">
+									
+										<div class="forms">
+											<input type="name" id="voornaam" class="text" name="txtVoornaam" maxlength="15" placeholder=" John" required>
+											<?php
+												if ($Taalnu == "EN"){
+											?>
+												  <label>First name</label>
+											<?php
+												}
+												else {
+											?>
+												<label>Voornaam</label>
+											<?php
+												}
+											?>
+												
+										</div>
+										
+										<div class="forms">
+											<input type="name" id="achternaam" class="text" name="txtAchternaam" maxlength="15"placeholder=" Appleseed" required>
+												<?php
+												if ($Taalnu == "EN"){
+											?>
+												  <label>Last name</label>
+											<?php
+												}
+												else {
+											?>
+												<label>Achternaam</label>
+											<?php
+												}
+											?>
+												
+										</div>
+									
+								  </div>
+								  <button class="btn btn-default" onclick="login()">Login</button>
+								
+								</div>
+					  </li>
+					</ul>
+				  </div>
+				  
+				<div class="row">
+					<div class="col-xs-12 menu">
+						<div id="inloggevens"></div>
+					</div> 
+				 
+				
+				<div class="carousel slide carousel-fade" data-ride="carousel">
+
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+					</div>
+					<div class="item">
+					</div>
+					<div class="item">
+					</div>
+				</div>
+			</div>
+				
+				
+				<div class="navbar navbar-inverse navbar-fixed-bottom">
+					<div class="container">
+						<p class="navbar-text pull-left copyright">&copy;Labtreeo.inc <script>new Date().getFullYear()&&document.write(new Date().getFullYear());</script>
+					</div>
+				</div>

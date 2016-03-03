@@ -1,0 +1,37 @@
+  <!DOCTYPE html>
+    <html>
+	<head>
+	</head>
+	<body onload="browserCheck()">
+    <script>
+
+	function browserjquery(){
+		$(':input').removeAttr('placeholder');
+	}
+	
+    function browserCheck() { 
+     if((navigator.userAgent.indexOf("Opera") || navigator.userAgent.indexOf('OPR')) != -1 ) 
+    {
+        
+    }
+    else if(navigator.userAgent.indexOf("Chrome") != -1 )
+    {
+        
+    }
+    else if(navigator.userAgent.indexOf("Safari") != -1)
+    {
+        browserjquery();
+    }
+    else if(navigator.userAgent.indexOf("Firefox") != -1 ) 
+    {
+        browserjquery();
+    }
+    else if((navigator.userAgent.indexOf("MSIE") != -1 ) || (!!document.documentMode == true )) //IF IE > 10
+    {
+      browserjquery();
+    }}
+  
+    </script>
+
+    </body>
+    </html>
